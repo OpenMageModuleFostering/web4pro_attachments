@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Web4pro_Attachments",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Attach additional download files,",
+    "authors": [
+    {
+        "name": "Sergey Repin",
+        "email": "srepin@corp.web4pro.com.ua"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
