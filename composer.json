@@ -1,7 +1,7 @@
 {
     "name": "OpenMageModuleFostering/Web4pro_Attachments",
     "type": "magento-module",
-    "license": "GPL",
+    "license": "OSL-v3.0",
     "homepage": "",
     "description": "Attach additional download files,",
     "authors": [
