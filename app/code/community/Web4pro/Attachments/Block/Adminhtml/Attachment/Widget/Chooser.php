@@ -47,7 +47,7 @@ class Web4pro_Attachments_Block_Adminhtml_Attachment_Widget_Chooser extends Mage
     {
         $uniqId = Mage::helper('core')->uniqHash($element->getId());
         $sourceUrl = $this->getUrl(
-            'web4pro_attachments/adminhtml_attachments_attachment_widget/chooser',
+            'adminhtml/attachments_attachment_widget/chooser',
             array('uniq_id' => $uniqId)
         );
         $chooser = $this->getLayout()->createBlock('widget/adminhtml_widget_chooser')
