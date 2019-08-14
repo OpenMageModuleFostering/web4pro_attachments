@@ -72,4 +72,18 @@ class Web4pro_Attachments_Helper_Attachment extends Mage_Core_Helper_Abstract
             return (round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . $sizes[$i]);
         }
     }
+
+
+    /**
+     * delete the file if need
+     * @param $postData
+     */
+    public function deleteAttachemntFileIfNeed($postData)
+    {
+        if(isset($postData['uploaded_file']['delete']) && isset($postData['uploaded_file']['value'])
+            && $postData['uploaded_file']['delete'] == 1 && !empty($postData['uploaded_file']['value'])){
+            $pathToDelete = $this->getFileBaseDir().$postData['uploaded_file']['value'];
+            unlink($pathToDelete);
+        }
+    }
 }

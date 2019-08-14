@@ -123,11 +123,13 @@ class Web4pro_Attachments_Adminhtml_Attachments_AttachmentController extends Web
             try {
                 $attachment = $this->_initAttachment();
                 $attachment->addData($data);
+                $attachmentHelper = Mage::helper('web4pro_attachments/attachment');
                 $uploadedFileName = $this->_uploadAndGetName(
                     'uploaded_file',
-                    Mage::helper('web4pro_attachments/attachment')->getFileBaseDir(),
+                    $attachmentHelper->getFileBaseDir(),
                     $data
                 );
+                $attachmentHelper->deleteAttachemntFileIfNeed($data);
                 $attachment->setData('uploaded_file', $uploadedFileName);
                 $products = $this->getRequest()->getPost('products', -1);
                 if ($products != -1) {
