@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Web4pro_Attachments",
+    "name": "OpenMageModuleFostering\/Web4pro_Attachments",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Attach additional download files,",
     "authors": [
-    {
-        "name": "Sergey Repin",
-        "email": "srepin@corp.web4pro.com.ua"
-    }
-],
+        {
+            "name": "Sergey Repin",
+            "email": "srepin@corp.web4pro.com.ua"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
